@@ -1,0 +1,25 @@
+{
+  "defaultSeverity": "warning",
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-selector-bem-pattern"
+  ],
+  "extends": "stylelint-config-sass-guidelines",
+  "rules": {
+    "scss/selector-no-redundant-nesting-selector": true,
+    "scss/at-extend-no-missing-placeholder": true,
+    "at-rule-blacklist": ["extend"],
+    "max-nesting-depth": 3,
+    "declaration-no-important": true,
+    "selector-max-compound-selectors": 3,
+    "selector-no-qualifying-type": true,
+    "no-duplicate-selectors": true,
+    "block-no-empty": true,
+    "at-rule-empty-line-before": null,
+    "plugin/selector-bem-pattern": {
+      "preset": "bem",
+      "utilitySelectors": "^\\.(u|l)-[a-z]+$",
+      "ignoreSelectors": []
+    }
+  }
+}

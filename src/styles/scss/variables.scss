@@ -1,0 +1,41 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Typography
+$font-family: "Cera", "Cera GR", "Avant Garde", "Century Gothic", sans-serif !default;
+$base-font-size: 62.5%;
+
+
+// Breakpoints
+// TODO: Change to EM Units
+$bp-larger-than-mobile    : "400px" !default;
+$bp-larger-than-phablet   : "550px" !default;
+$bp-larger-than-tablet    : "750px" !default;
+$bp-larger-than-desktop   : "1000px" !default;
+$bp-larger-than-desktophd : "1200px" !default;
+
+
+$breakpoints: (
+	"phone":      $bp-larger-than-mobile,
+	"phablet":    $bp-larger-than-phablet,
+	"tablet":     $bp-larger-than-tablet,
+	"desktop":    $bp-larger-than-desktop,
+	"desktop-xl": $bp-larger-than-desktophd
+);
+
+// Colors
+$light-grey: #e1e1e1 !default;
+$dark-grey: #333 !default;
+$primary-color: #33c3f0 !default;
+$secondary-color: lighten($dark-grey, 13.5%) !default;
+$border-color: #bbb !default;
+$link-color: #1eaedb !default;
+$font-color: #fff !default;
+
+
+// Buttons
+$primary-button: #796A4F;
+// $secondary-button: #
+
+// Misc
+$global-radius: 32px !default;

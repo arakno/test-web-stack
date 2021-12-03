@@ -1,0 +1,137 @@
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.home {
+  background: rgb(4, 29, 14);
+  background: linear-gradient(
+    53deg,
+    rgba(4, 29, 14, 1) 30%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+// HEADER
+
+.masthead {
+	@include mq('tablet') {
+		background: url(../img/lights.svg) 80% top no-repeat;
+		background-size: contain;
+	}
+	min-height: 100px;
+	display: flex;
+	justify-content: space-around;
+	padding: 55px 0;
+
+	.logo {
+		order: -1;
+
+		img {
+			transition: all 0.2s ease-in-out;
+			@include hardware;
+		
+			&:hover {
+				animation: swing 1s ease;
+				animation-iteration-count: 1;
+			}
+		}
+	}
+
+}
+
+
+// CONTENT
+
+main {
+  flex: 1 0 auto;
+	min-height: auto;
+	
+	.main-content {
+		@include center('both');
+		justify-content: center;
+		display: flex;
+    flex-direction: column;
+		text-align: center;
+
+		@include mq('tablet') {
+			max-width: 680px;
+		}
+	}
+
+	.headline {
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+
+	.caption {
+		@include font-size(28px);
+		margin-bottom: 0;
+		line-height: 1.2;
+		
+		& + p {
+			text-align: center;
+		}
+	}
+
+	.room-name {
+		@include font-size(28px);
+		color: $dark-grey;
+		text-align: center;
+	}
+	
+}
+
+
+// FOOTER 
+
+main + footer {
+  height: 360px;
+	background-image: url(../img/bar.svg);
+	background-repeat: repeat-x;
+  background-position: left 830%;
+
+	display: flex;
+	justify-content: space-between;
+
+	@include mq('tablet') {
+		.drinks {
+			height: 300px;
+			width: 50%;
+			background-image: url(../img/drinks.svg);
+			background-repeat: no-repeat;
+			background-position: 10% bottom;
+		}
+	
+		.taps {
+			width: 50%;
+			height: 300px;
+			background-image: url(../img/taps.svg);
+			background-repeat: no-repeat;
+			background-position: 80% bottom;
+		}
+  }
+
+}
+
+
+
+
+
+.spinner {
+  height: 40px;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  animation: spinner3 800ms ease infinite;
+}
+
+
+.dialog {
+	
+}
+
