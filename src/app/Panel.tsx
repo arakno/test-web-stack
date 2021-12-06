@@ -1,5 +1,7 @@
 type Props = {
     value: number
+    title: string
+    url: string
 }
 
 const Panel = ({value, ...props}: Props) => (
@@ -8,7 +10,8 @@ const Panel = ({value, ...props}: Props) => (
           <tbody>
             <tr>
                 <td>   
-                    
+                    <img src={props.url} alt="user-avatar" />
+                    <p>{props.title}</p>
                 </td>
             </tr>
         </tbody>

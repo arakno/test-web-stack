@@ -27,3 +27,10 @@ npm run a11y
 > Run `npm run build:prod` to build the project in production mode. 
 
 The build artifacts will be stored in the `dist/` directory.
+
+
+
+ISSUES:
+- fixing the build with latest security updates and package compatibility
+- https://stackoverflow.com/questions/64625050/error-node-sass-version-5-0-0-is-incompatible-with-4-0-0
+- 
