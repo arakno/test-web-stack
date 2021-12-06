@@ -17,7 +17,6 @@ body {
 
 .masthead {
 	@include mq('tablet') {
-		background: url(../../img/lights.svg) 80% top no-repeat;
 		background-size: contain;
 	}
 
@@ -87,7 +86,6 @@ main {
 
 main + footer {
   height: 360px;
-	background-image: url(../../img/bar.svg);
 	background-repeat: repeat-x;
   background-position: left 830%;
 
@@ -98,7 +96,6 @@ main + footer {
 		.drinks {
 			height: 300px;
 			width: 50%;
-			background-image: url(../../img/drinks.svg);
 			background-repeat: no-repeat;
 			background-position: 10% bottom;
 		}
@@ -106,7 +103,6 @@ main + footer {
 		.taps {
 			width: 50%;
 			height: 300px;
-			background-image: url(../../img/taps.svg);
 			background-repeat: no-repeat;
 			background-position: 80% bottom;
 		}
@@ -130,7 +126,4 @@ main + footer {
 }
 
 
-.dialog {
-	
-}
 

@@ -1,9 +1,8 @@
 import '@scss/main.scss'
 
-import { Header } from '@/app/header';
-// import { Footer } from '@/app/footer';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './app/App.tsx';
 
-// console.log(`***Header******`);
-// let header = new Header();
-// let firstHeading = header.getFirstHeading();
-// console.log(firstHeading);
+ReactDOM.render(<App />, document.getElementById('root'));
+

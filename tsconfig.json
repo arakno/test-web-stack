@@ -20,7 +20,8 @@
         "@scss": [ "src/styles/scss" ],
         "@img": [ "src/img" ],
         "@": [ "src" ],
-      }
+      },
+      "jsx": "react-jsx"
     },
     "include": [
       "src"
