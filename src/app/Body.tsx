@@ -3,14 +3,15 @@ import Button from './Button'
 import Panel from './Panel'
 
 type Props = {
-  value: number
-  userId: number
+  userId: string
+  title: string
+  url: string
 }
 
 const Body = (props: Props) => {
 
-  const [isOpen, setIsOpen] = useState<boolean>(false)
-  const {value} = props
+  const [isOpen, setIsOpen] = useState<boolean>(true)
+  const {userId} = props
 
   const showPanel = () => {
     setIsOpen(true)
@@ -22,13 +23,11 @@ const Body = (props: Props) => {
 
   return (
       <main className="app-body">
-        {isOpen && <Panel userId={value}/>}
+        {isOpen && <Panel {...props} />}
+        {/* if more avatars */}
         <div className="buttons">
           <Button className="btn" onClick={showPanel}
-            text="show panel"
-          />
-          <Button className="btn" onClick={hidePanel}
-            text="hide panel"
+            text="Load more"
           />
         </div>
       </main>

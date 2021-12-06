@@ -2,33 +2,32 @@ import React, {Component} from 'react';
 import Header from './Header'
 import Body from './Body'
 
-
 type State = {
-  value: number
+  userId: number
 }
 
 class App extends Component<{}, State> {
   constructor(props: {}) {
     super(props)
     this.state = {
-        value: 1
+        userId: 1
       }
-    this.updateMessage = this.updateMessage.bind(this)
+    this.filterUser = this.filterUser.bind(this)
   }
   
-  updateMessage = (userId: number) => {
+  filterUser = (userId: number) => {
     this.setState(() => ({
-        value: userId
+        userId: userId
     }))
   }
 
   render(): JSX.Element {
-    const {value} = this.state
+    const {userId} = this.state
 
     return (
       <div id="body">
-        <Header value={value} />
-        <Body updateMessage={this.updateMessage} value={value}/>
+        <Header filterUser={this.filterUser} />
+        <Body value={userId} />
       </div>
     )
   }

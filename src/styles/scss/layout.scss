@@ -5,20 +5,12 @@ body {
 }
 
 .home {
-  background: rgb(4, 29, 14);
-  background: linear-gradient(
-    53deg,
-    rgba(4, 29, 14, 1) 30%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: #F8F8F8;
 }
 
 // HEADER
 
 .masthead {
-	@include mq('tablet') {
-		background-size: contain;
-	}
 
 	min-height: 100px;
 	display: flex;
@@ -27,16 +19,6 @@ body {
 
 	.logo {
 		order: -1;
-
-		img {
-			transition: all 0.2s ease-in-out;
-			@include hardware;
-		
-			&:hover {
-				animation: swing 1s ease;
-				animation-iteration-count: 1;
-			}
-		}
 	}
 
 }
@@ -45,23 +27,18 @@ body {
 // CONTENT
 
 main {
-  flex: 1 0 auto;
+	flex: 1 0 auto;
 	min-height: auto;
 	
 	.main-content {
-		// @include center('both');
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-    height: 100%;
+    	height: 100%;
 	}
 
-	.headline {
-		text-transform: uppercase;
-		font-weight: 400;
-	}
 
 	.caption {
 		@include font-size(28px);
@@ -73,56 +50,6 @@ main {
 		}
 	}
 
-	.room-name {
-		@include font-size(28px);
-		color: $dark-grey;
-		text-align: center;
-	}
-	
-}
-
-
-// FOOTER 
-
-main + footer {
-  height: 360px;
-	background-repeat: repeat-x;
-  background-position: left 830%;
-
-	display: flex;
-	justify-content: space-between;
-
-	@include mq('tablet') {
-		.drinks {
-			height: 300px;
-			width: 50%;
-			background-repeat: no-repeat;
-			background-position: 10% bottom;
-		}
-	
-		.taps {
-			width: 50%;
-			height: 300px;
-			background-repeat: no-repeat;
-			background-position: 80% bottom;
-		}
-  }
-
-}
-
-
-
-
-
-.spinner {
-  height: 40px;
-  width: 40px;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-  animation: spinner3 800ms ease infinite;
 }
 
 
