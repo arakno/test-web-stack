@@ -1,6 +1,10 @@
 {
   "extends": "airbnb",
   "rules": {
-    "func-names": ["error", "never"]
+    "func-names": ["error", "never"],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "react/jsx-filename-extension": [ "warn", {"extensions": [".tsx"]} ],
+    "react/prop-types": "off"
   }
 }

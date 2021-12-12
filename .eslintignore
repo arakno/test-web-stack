@@ -2,3 +2,6 @@ node_modules/*
 **/vendor/*.js
 **/plugins/*.js
 build/*
+*.css
+*.scss
+*.svg

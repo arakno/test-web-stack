@@ -65,7 +65,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Pubhub -',
+            title: 'Superformula -',
             template: './src/index.html',
             inject: true,
             minify: {
