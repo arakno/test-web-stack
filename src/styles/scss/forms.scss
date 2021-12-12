@@ -88,3 +88,43 @@ textarea {
         color: $light-grey;
     }
 }
+
+
+
+
+.frame {
+  width: 400px;
+  height: 336px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+.avatar {
+  width: 168px;
+  height: 168px;
+  background: url(Image.png);
+
+  .title {
+      width: 336px;
+      height: 28px;
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 26px;
+      color: #000000;
+  }
+
+  p {
+      width: 336px;
+      height: 20px;
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      color: #000000;
+  }
+}
