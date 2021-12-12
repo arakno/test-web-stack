@@ -1,5 +1,4 @@
 .frame {
-    position: absolute;
     width: 400px;
     height: 336px;
     background: #FFFFFF;
@@ -7,13 +6,11 @@
 }
 
 .avatar {
-    position: absolute;
     width: 168px;
     height: 168px;
     background: url(Image.png);
 
     .title {
-        position: absolute;
         width: 336px;
         height: 28px;
         font-family: Source Sans Pro;
@@ -25,7 +22,6 @@
     }
 
     p {
-        position: absolute;
         width: 336px;
         height: 20px;
         font-family: Source Sans Pro;
@@ -38,3 +34,5 @@
         color: #000000;
     }
 }
+
+

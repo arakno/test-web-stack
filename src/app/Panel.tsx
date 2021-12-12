@@ -7,16 +7,12 @@ type Props = {
 
 const Panel = ({...props}: Props) => (
     <div {...props} id="panel" className="users-panel">
-      <table>
-          <tbody>
-            <tr>
-                <td>   
-                    <img src={props.url} alt="User avatar" />
-                    <p>{props.title}</p>
-                </td>
-            </tr>
-        </tbody>
-      </table>
+      <ul>
+        <li className="frame">
+            <img src={props.url} alt="User avatar" className="avatar"/>
+            <p className="title">{props.title}</p>
+        </li>
+      </ul>
     </div>
   )
 
