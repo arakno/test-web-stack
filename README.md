@@ -35,11 +35,11 @@ ISSUES:
 - https://stackoverflow.com/questions/64625050/error-node-sass-version-5-0-0-is-incompatible-with-4-0-0
 - 
 
-
+IMPROVEMENTS:
 What would improve given more time
 - implement unsplash server side would give better performance as we could preemptively fetch images
 - Improve selector specificity and follow BEM naming convention 
-
+-
 
 
 
