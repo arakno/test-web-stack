@@ -36,6 +36,11 @@ ISSUES:
 - 
 
 
+What would improve given more time
+- implement unsplash server side would give better performance as we could preemptively fetch images
+- Improve selector specificity and follow BEM naming convention 
+
+
 
 
 # Superformula Web Developer Test
