@@ -1,12 +1,10 @@
 import React from 'react';
 
-import './search.scss'
-
 const Header = (props: any) => {
     return (
       <div id="body">
         <form action="" className="input-search">
-          <label htmlFor="search">Users List</label>
+          <label htmlFor="search"><h2>Users List</h2></label>
           <input 
             id="search" 
             type="text" 

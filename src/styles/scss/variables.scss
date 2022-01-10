@@ -25,7 +25,7 @@ $breakpoints: (
 );
 
 // Colors
-$light-grey: #e1e1e1 !default;
+$light-grey: rgba(0, 0, 0, 0.4) !default;
 $dark-grey: #333 !default;
 $primary-color: #33c3f0 !default;
 $secondary-color: lighten($dark-grey, 13.5%) !default;
