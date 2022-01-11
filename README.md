@@ -119,7 +119,8 @@ Use HTML, CSS, and JavaScript (choose one of popular framework) to implement the
 
 - ✓ JS oriented (Typescript preferred)
 - ✓ Use **React**, **Angular** or **VUE** (React preferred)
-- ✓ Use unsplash.com to show random avatar images
+- Use unsplash.com to show random avatar images
+
 - You don't have to write configuration from scratch (you can use eg. CRA for React application)
 - Feel free to use a preprocessor like SASS/SCSS/Less or CSS in JS
 - Provide E2E and unit tests (one component&view well tested is enough, no need to test every component/view)
